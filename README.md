@@ -13,9 +13,12 @@ Window 2 - Run Kafka Service (keep window open)
 ```
 .\bin\windows\kafka-server-start.bat .\config\server.properties
 ```
-Window 3 (temporary) - Execute One-Time Commands - create, list, delete topics 
+Window a (temporary) - Execute One-Time Commands - create, list, delete topics 
 ```
 .\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --create --topic krish-msgs
+```
+Window b (optional) - To listout the available topics
+```
 .\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --list
 ```
 Window 4 - Run Kafka Producer (will provide a > prompt for writing messages)
