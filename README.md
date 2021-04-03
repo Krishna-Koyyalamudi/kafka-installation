@@ -21,11 +21,11 @@ Window b (optional) - To listout the available topics
 ```
 .\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --list
 ```
-Window 4 - Run Kafka Producer (will provide a > prompt for writing messages)
+Window 3 - Run Kafka Producer (will provide a > prompt for writing messages)
 ```
 .\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic krish-msgs
 ```
-Window 5 - Run Kafka Consumer (to show messages from the beginning)
+Window 4 - Run Kafka Consumer (to show messages from the beginning)
 ```
 .\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic krish-msgs --from-beginning
 ```
